@@ -82,9 +82,9 @@ const EventTimeline = () => {
                   style={{ 
                     backgroundColor: '#172554'
                   }} 
-                  className="text-[#121B4A] rounded-3xl sm:rounded-xl md:rounded-3xl p-4 shadow-md mt-2 w-full max-w-md mx-auto"
+                  className="text-[#121B4A] text-left rounded-3xl sm:rounded-xl md:rounded-3xl p-4 shadow-md mt-2 w-full max-w-md mx-auto"
                 >
-                  <Typography variant="h6" component="span" className="font-bold text-[#F7A01E] pr-4 pl-4  sm:pl-0">
+                  <Typography variant="h6" component="span" className="font-bold text-left text-[#F7A01E]  sm:pl-0">
                     {event.title}
                   </Typography>
                   <Typography className="text-left pl-4 sm:pl-0 text-[#CED1D3]">{event.description}</Typography>
