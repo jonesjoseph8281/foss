@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   Timeline, 
   TimelineItem, 
@@ -10,50 +9,50 @@ import {
 } from '@mui/lab';
 import { Typography } from '@mui/material';
 
-const TimelineComponent = () => {
-  const events = [
-    {
-      time: '10:00 AM',
-      title: 'Opening Ceremony',
-      description: 'Welcome and introduction to the conference.',
-    },
-    {
-      time: '11:00 AM',
-      title: 'Keynote Speech',
-      description: 'Presentation by a top industry expert on major trends.',
-    },
-    {
-      time: '01:00 PM',
-      title: 'Tech Session 1',
-      description: 'Detailed look at an important technology or topic.',
-    },
-    {
-      time: '02:00 PM',
-      title: 'Networking Lunch',
-      description: 'Lunch break to connect and network with other attendees.',
-    },
-    {
-      time: '03:00 PM',
-      title: 'Panel Discussion',
-      description: 'Discussion with experts on a relevant topic, including a Q&A.',
-    },
-    {
-      time: '04:00 PM',
-      title: 'Tech Session 2',
-      description: 'Another in-depth session on a different key topic.',
-    },
-    {
-      time: '05:00 PM',
-      title: 'Product Demonstrations',
-      description: 'Showcase of the latest technologies and products.',
-    },
-    {
-      time: '06:00 PM',
-      title: 'Closing Remarks',
-      description: 'Summary of the day and thanks to attendees and speakers.',
-    },
-  ];
+export const events = [
+  {
+    time: '10:00 AM',
+    title: 'Opening Ceremony',
+    description: 'Welcome and introduction to the conference.',
+  },
+  {
+    time: '11:00 AM',
+    title: 'Keynote Speech',
+    description: 'Presentation by a top industry expert on major trends.',
+  },
+  {
+    time: '01:00 PM',
+    title: 'Tech Session 1',
+    description: 'Detailed look at an important technology or topic.',
+  },
+  {
+    time: '02:00 PM',
+    title: 'Networking Lunch',
+    description: 'Lunch break to connect and network with other attendees.',
+  },
+  {
+    time: '03:00 PM',
+    title: 'Panel Discussion',
+    description: 'Discussion with experts on a relevant topic, including a Q&A.',
+  },
+  {
+    time: '04:00 PM',
+    title: 'Tech Session 2',
+    description: 'Another in-depth session on a different key topic.',
+  },
+  {
+    time: '05:00 PM',
+    title: 'Product Demonstrations',
+    description: 'Showcase of the latest technologies and products.',
+  },
+  {
+    time: '06:00 PM',
+    title: 'Closing Remarks',
+    description: 'Summary of the day and thanks to attendees and speakers.',
+  },
+];
 
+export const TimelineComponent = () => {
   return (
     <div style={{ backgroundColor: '#121B44' }} className="py-8 min-h-screen">
       <div className="max-w-4xl mx-auto px-4">
@@ -97,5 +96,3 @@ const TimelineComponent = () => {
     </div>
   );
 };
-
-export default TimelineComponent;

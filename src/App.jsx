@@ -1,5 +1,4 @@
-import React from 'react';
-import TimelineComponent from './components/TimelineComponent';
+import {TimelineComponent} from './components/TimelineComponent';
 import SmallDeviceTimelineComponent from './components/SmallDeviceTimelineComponent';
 import { useMediaQuery } from 'react-responsive';
 
@@ -10,7 +9,6 @@ const MainComponent = () => {
 
   return (
     <div>
-      <h1>hi</h1>
       {isSmallDevice ? (
         <SmallDeviceTimelineComponent />
       ) : (
