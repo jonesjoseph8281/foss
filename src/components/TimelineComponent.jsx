@@ -10,7 +10,7 @@ import {
 } from '@mui/lab';
 import { Typography } from '@mui/material';
 
-const EventTimeline = () => {
+const TimelineComponent = () => {
   const events = [
     {
       time: '10:00 AM',
@@ -57,7 +57,7 @@ const EventTimeline = () => {
   return (
     <div style={{ backgroundColor: '#121B44' }} className="py-8 min-h-screen">
       <div className="max-w-4xl mx-auto px-4">
-        <Typography variant="h3" className="text-center text-[#CED1D3] mb-10 text-2xl md:text-3xl">
+        <Typography variant="h3" className="text-center text-[#CED1D3] mb-10 text-2xl ">
           Timeline
         </Typography>
         <Timeline position="alternate">
@@ -66,7 +66,7 @@ const EventTimeline = () => {
               <TimelineOppositeContent>
                 <Typography
                   variant="h5"
-                  className="text-[#CED1D3] font-bold text-xl sm:text-2xl md:text-3xl pt-8"
+                  className="text-[#CED1D3] font-bold text-xl md:text-3xl pt-8"
                 >
                   {event.time}
                 </Typography>
@@ -82,12 +82,12 @@ const EventTimeline = () => {
                   style={{ 
                     backgroundColor: '#172554'
                   }} 
-                  className="text-[#121B4A] text-left rounded-3xl sm:rounded-xl md:rounded-3xl p-4 shadow-md mt-2 w-full max-w-md mx-auto"
+                  className="text-[#121B4A] text-left rounded-3xl  md:rounded-3xl p-4 shadow-md mt-2 w-full max-w-md mx-auto"
                 >
                   <Typography variant="h6" component="span" className="font-bold text-left text-[#F7A01E]  sm:pl-0">
                     {event.title}
                   </Typography>
-                  <Typography className="text-left pl-4 sm:pl-0 text-[#CED1D3]">{event.description}</Typography>
+                  <Typography className="text-left text-[#CED1D3]">{event.description}</Typography>
                 </div>
               </TimelineContent>
             </TimelineItem>
@@ -98,4 +98,4 @@ const EventTimeline = () => {
   );
 };
 
-export default EventTimeline;
+export default TimelineComponent;

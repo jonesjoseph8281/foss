@@ -1,12 +1,23 @@
 import React from 'react';
-import Timeline from './components/Timeline';
+import TimelineComponent from './components/TimelineComponent';
+import SmallDeviceTimelineComponent from './components/SmallDeviceTimelineComponent';
+import { useMediaQuery } from 'react-responsive';
 
-function App() {
+const MainComponent = () => {
+  const isSmallDevice = useMediaQuery({ query: '(max-width: 768px)' });
+
+  console.log('isSmallDevice:', isSmallDevice); 
+
   return (
-    <div className="App">
-      <Timeline />
+    <div>
+      <h1>hi</h1>
+      {isSmallDevice ? (
+        <SmallDeviceTimelineComponent />
+      ) : (
+        <TimelineComponent />
+      )}
     </div>
   );
-}
+};
 
-export default App;
+export default MainComponent;
